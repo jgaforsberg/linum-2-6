@@ -1,0 +1,24 @@
+# Konfigurationsfiler för de olika scenariona 
+# finns i kataloger B1 B2 B3 för respektive scenario
+# B1 = scenario 1, access för vanlig användare
+# B2 = scenario 2, access för superuser ej andra
+# B3 = scenario 3, access för supergroup ej andra
+
+# Källkod för program checkuser finns i katalog src
+
+# Kommandon för endast applikationen
+#make all 
+# kompilerar programmet
+#sudo make install
+# installerar till /usr/local/bin
+# Kommandon för direktinstallation av scenarion
+# till /usr/local/bin & /etc/security & /etc/pam.d
+#sudo make B1
+# kompilerar applikation & applicerar konfig för B1
+#sudo make B2
+# kompilerar applikation & applicerar konfig för B2
+#sudo make B3
+# kompilerar applikation & applicerar konfig för B3
+
+# jgaforsberg gufo0047 gusfor-1 gufr22
+# Applikation med autentisering PAM

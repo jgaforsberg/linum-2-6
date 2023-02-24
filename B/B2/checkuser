@@ -1,0 +1,7 @@
+# auth check for user = <user>
+auth	sufficient	pam_succeed_if.so user = jgaf
+auth	required	pam_deny.so
+# acct check for valid account
+account	sufficient	pam_access.so accessfile=/etc/security/checkuser.conf
+account	required	pam_deny.so
+

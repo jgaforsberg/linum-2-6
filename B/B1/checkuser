@@ -1,0 +1,5 @@
+# auth check for password
+auth	required	pam_unix.so
+# acct check for valid account
+account	required	pam_unix.so
+
